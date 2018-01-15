@@ -15,22 +15,20 @@
     <!--<link rel="stylesheet" href="https://bootswatch.com/3/journal/bootstrap.min.css">-->
     <!-- adding custom css stylesheet -->
     <!-- <link rel="stylesheet" type="text/css" href="../assets/css/styleOG.css"> -->
+    <link rel="stylesheet" type="text/css" href="http://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css">
   </head>
   <body>
-    
-    <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Trevor Sheffield</a>
         </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+        <!--Need to check and see why the nav bar btn group doesn't auto give top margin. Should add to CSS file and remove inline style code -->
+            <div class="nav navbar-right btn-group" role="group" aria-label="top-menu-button-nav" style="margin-top: 5px">
+            <a href="index.html"><button  type="button" class="btn btn-primary">About</button></a>
+            <a href="portfolio.html"><button type="button" class="btn btn-primary">Portfolio</button></a>
+            <a href="contact.html"><button type="button" class="btn btn-primary">Contact</button></a>
+          </div>
     </nav>
 
     <div class="container">
@@ -40,28 +38,39 @@
             <h1>About Me</h1>
           </div>
           <div class="row">
-            <div class="col-md-3">
-              <img class="img-thumbnail" src="http://placehold.it/150x150" alt="Placeholder">
+            <div class="col-md-3 col-lg-3 col-xl-3 col-sm-5 col-xs-5">
+              <img class="img-thumbnail img-fluid mx-auto" src="file:///Users/trev/Documents/week1/Bootstrap-Portfolio/assets/images/TrevorLeaningAgainstATruck2017.jpg" alt="Picture-of-Trevor-leaning-against-truck">
             </div>
             <div class="col-md-9">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare, eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et neque fringilla ultricies. Aenean at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a.
+               Over 6+ years of customer focused management that includes knowledge of computer networks, systems and languages combined with team development and growth ranging from small business, non-profit, government to large corporation.
+              </p>
+              <p>
+              Most recent experience was the development of a new high-end “white glove” SEM startup agency from within a large corporation. Original founding team member that grew the team to over 42 people with over 50 million in annualized revenue.
               </p>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3 col-lg-3 col-xl-6 col-sm-5 col-xs-6">
          <div class="panel panel-default">
            <div class="panel-heading">
-             <h3 class="panel-title">Sidebar</h3>
+             <h3 class="panel-title">Connect with me:</h3>
            </div>
            <div class="panel-body">
-             Sidebar content
+            <a href="https://www.linkedin.com/in/trevormsheffield/" target="_blank"><img src="assets/images/linkedin-128.png" class="img-fluid img-thumbnail mx-auto" style="width: 50px; margin: 1px;"></a>
+             <a href="https://github.com/TrevorSheffield" target="_blank"><img src="assets/images/github-128.png" class="img-fluid img-thumbnail mx-auto" style="width: 50px; margin: 1px;"></a>
+             <a href="https://stackoverflow.com/story/trevorsheffield" target="_blank"><img src="assets/images/stackoverflow-128.png" class="img-fluid img-thumbnail mx-auto" style="width: 50px; margin: 1px;"></a>
            </div>
          </div>
         </div>
       </div>
-    </div>
+      <!--I had a lot of difficulty getting the footer to position propery on each page, so it might not be easy to create a separate Footer CSS file that handles the footer on every page; however, that would be a good goal. That way, the inline style code can be removed -->
+        <footer class="footer" style="position: absolute; right: 0;
+        bottom: 0; left: 0; text-align: center; z-index: 1;">
+          <div class="container">
+            <span class="text-muted">Copyright © 2018 Trevor Sheffield</span>
+          </div>
+        </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
